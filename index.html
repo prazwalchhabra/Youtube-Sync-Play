@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width">
+  </head>
+
+  <body>
+    
+    <div id="player" style="margin-right: 5%;"></div>
+    <div id="player-buttons" style="margin-right: 5%;">
+      <button style="background-color: black; color: azure;" id="play">Play/Pause</button><br><br><br>
+      <button style="background-color: black; color: azure;" id="sync_brod">Sync Brodcast</button><br><br><br>
+      <button style="background-color: black; color: azure;" id="sync_me">Sync Me</button><br><br><br>
+    </div>
+
+    <div class="content">
+      <div class="messages">
+
+      </div>
+      <form class="footer" onsubmit="return false;">
+        <input type="text" placeholder="Type Your Message Here">
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <template data-template="message">
+      <div class="message">
+        <div class="message__name"></div>
+        <div class="message__bubble"></div>
+      </div>
+    </template>
+
+    <script src="web-rtc-util.js"></script>
+    <script src="player.js"></script>
+
+  </body>
+</html>
